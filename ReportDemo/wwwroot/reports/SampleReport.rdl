@@ -1,0 +1,102 @@
+<?xml version="1.0"?>
+<Report xmlns:df="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition/defaultfontfamily" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition">
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+        </Style>
+        <ReportItems>
+          <Image Name="Image2">
+            <Left>0.75000pt</Left>
+            <Top>0.75000pt</Top>
+            <Value>ReportIcon</Value>
+            <Height>75pt</Height>
+            <Width>75pt</Width>
+            <Visibility />
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+            </Style>
+            <Source>Embedded</Source>
+            <Sizing>FitProportional</Sizing>
+          </Image>
+          <Textbox Name="TextBox1">
+            <Left>99.75pt</Left>
+            <Top>13.5pt</Top>
+            <Height>49.5pt</Height>
+            <Width>307.5pt</Width>
+            <Style>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+              <Border>
+                <Style>None</Style>
+              </Border>
+            </Style>
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>Sample Report</Value>
+                    <Style>
+                      <FontFamily>Calibri</FontFamily>
+                      <FontSize>37.5pt</FontSize>
+                      <Color>Black</Color>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+          </Textbox>
+        </ReportItems>
+        <Height>3.125in</Height>
+      </Body>
+      <Width>6.5in</Width>
+      <Page>
+        <PageFooter>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+          </Style>
+          <Height>0.72917in</Height>
+          <PrintOnFirstPage>true</PrintOnFirstPage>
+          <PrintOnLastPage>true</PrintOnLastPage>
+        </PageFooter>
+        <LeftMargin>1in</LeftMargin>
+        <RightMargin>1in</RightMargin>
+        <TopMargin>1in</TopMargin>
+        <BottomMargin>1in</BottomMargin>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+        </Style>
+      </Page>
+    </ReportSection>
+  </ReportSections>
+  <AutoRefresh>0</AutoRefresh>
+  <ReportParametersLayout>
+    <GridLayoutDefinition>
+      <NumberOfColumns>4</NumberOfColumns>
+      <NumberOfRows>2</NumberOfRows>
+    </GridLayoutDefinition>
+  </ReportParametersLayout>
+  <EmbeddedImages>
+    <EmbeddedImage Name="ReportIcon">
+      <MIMEType>image/png</MIMEType>
+      <ImageData>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</ImageData>
+    </EmbeddedImage>
+  </EmbeddedImages>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:PageUnit>Px</rd:PageUnit>
+  <df:DefaultFontFamily>Segoe UI</df:DefaultFontFamily>
+</Report>
