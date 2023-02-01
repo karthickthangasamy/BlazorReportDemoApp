@@ -31,10 +31,10 @@ steps:
   inputs:
     command: 'publish'
     publishWebProjects: true
-- task: ArchiveFiles@2
+    arguments: '--configuration $(BuildConfiguration) --output $(Build.ArtifactStagingDirectory)'
+    zipAfterPublish: True
+
+- task: PublishPipelineArtifact@1
   inputs:
-    rootFolderOrFile: '$(Build.BinariesDirectory)'
-    includeRootFolder: true
-    archiveType: 'zip'
-    archiveFile: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
-    replaceExistingArchive: true
+    targetPath: '$(Build.ArtifactStagingDirectory)' 
+    artifactName: '$(Build.BuildId).zip'
